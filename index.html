@@ -1,1 +1,385 @@
-booter3234
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Adam A. Fasulo - Personal Website</title>
+    <style>
+        /* CSS Variables for easy theme customization */
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+            --accent-color: #e63946;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f5f5f5;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            margin-bottom: 2rem;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        nav a:hover {
+            color: #f0f0f0;
+            text-decoration: underline;
+        }
+        
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        h2 {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 4px solid white;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .publication, .resume-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .publication:last-child, .resume-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .publication h3, .resume-item h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .publication-meta, .resume-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: var(--transition);
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-color);
+        }
+        
+        .btn-accent:hover {
+            background-color: #c1121f;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-tag {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #ddd;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/api/placeholder/400/400" alt="Your Profile Picture" class="profile-image">
+        <h1>Adam A. Fasulo</h1>
+        <p>Computer Science & Cybersecurity Professional</p>
+    </header>
+    
+            <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#strengths">Strengths</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#publications">Publications & Projects</a></li>
+            <li><a href="#awards-and-education">Awards & Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Cybersecurity professional with R&D experience at Sandia National Laboratories where I held a security clearance. My expertise spans cyber systems, IoT/ICS security, and advanced search algorithms for large-scale data sets.</p>
+          <p>At Sandia Labs, I've helped develop the HADES threat intel platform, identified vulnerabilities in industrial IoT devices, and created a search tool enabling sub-millisecond search times across petabyte-scale datasets. I excel at working with all levels of staff and management and I am an eager employee with a strong desire to make an impact on any team or project.</p>
+          <p>Currently pursuing a B.S. in Computer Science and Math at the University of New Mexico while mentoring the next generation of cybersecurity professionals through Cyber Patriot. Dedicated to defending our nation through exceptional service in the national interest.</p>
+          
+            <div class="skills">
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">YARA</span>
+                <span class="skill-tag">ASM</span>
+                <span class="skill-tag">PowerShell</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">System Admin</span>
+                <span class="skill-tag">Network Config</span>
+                <span class="skill-tag">Hypervisors</span>
+                <span class="skill-tag">SDN</span>
+                <span class="skill-tag">Splunk</span>
+                <span class="skill-tag">Malware Analysis</span>
+                <span class="skill-tag">ICS Security</span>
+                <span class="skill-tag">IoT Security</span>
+            </div>
+            
+            <a href="#contact" class="btn btn-accent">Contact Me</a>
+            <a href="#resume" class="btn">View Resume</a>
+        </section>
+        
+        <section id="strengths">
+            <h2>Professional Strengths</h2>
+            <div class="resume-item">
+                <ul>
+                    <li><strong>Problem Solver:</strong> Natural curiosity and drive to fix things and understand how they work, with a lifelong passion for technology</li>
+                    <li><strong>Team Collaborator:</strong> Ability to help build up teams and work effectively both independently and with groups of various sizes</li>
+                    <li><strong>Adaptable:</strong> Experience across multiple cybersecurity domains and flexibility to switch between different project requirements</li>
+                    <li><strong>Calm Under Pressure:</strong> Known for maintaining composure when facing challenging situations and complex problems</li>
+                    <li><strong>Self-Motivated:</strong> Driven to learn and constantly seeking areas for improvement, often working extra hours out of genuine passion</li>
+                    <li><strong>Creative Thinker:</strong> Approaches technical challenges with creativity to find innovative solutions</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="resume">
+            <h2>Resume</h2>
+            
+            <div class="resume-item">
+                <h3>Education</h3>
+                <div class="resume-meta">University of New Mexico, Computer Science and Math, 2023 - 12/2025</div>
+                <p>Currently pursuing a degree in Computer Science and Mathematics.</p>
+                <div class="resume-meta">New Mexico Military Institute, College Athlete, 2017-2018</div>
+            </div>
+            
+            <div class="resume-item">
+                <h3>Work Experience</h3>
+                <div class="resume-meta">Intern - Tech YR Rnd – Cyber Systems R&D, Sandia National Laboratories, 5/2018 – 1/2021</div>
+                <ul>
+                    <li>Administered a computing lab running large cyber experiments including the HADES platform and IoT and ICS security research and development.</li>
+                    <li>Developed kernel hook modules to support the HADES platform and ecosystem of tooling which aided anonymous VMI (virtual machine introspection) on type 1 hypervisors.</li>
+                    <li>Built a search tool used by the IR team called Low Resolution Indexing which allowed for sub-millisecond search time over large peta-byte scale data sets.</li>
+                    <li>Contributed web development, built security exercises, and used provisioning tools to automate tasks in Sandia Lab's K-12 cyber security competition ThunderBird Cup and Tracer Fire.</li>
+                </ul>
+                
+                <div class="resume-meta">Intern - Tech YR Rnd – Enterprise Business Intelligence, Sandia National Laboratories, 2/2017 – 8/2017</div>
+                <ul>
+                    <li>Wrote a PowerShell Script that cut processing time for a recurring task from 90 hours to just over 6 hours.</li>
+                    <li>Met with customers to gather requirements to build fast and easy to use SSRS and Tableau reports.</li>
+                    <li>Worked with several software development teams to deliver high quality programming support.</li>
+                </ul>
+                
+                <div class="resume-meta">Intern – HS – Supply Chain and Quality Logistics, Sandia National Laboratories, 5/2016 – 2/2017</div>
+                <ul>
+                    <li>Ran a Jira site for the Web Shipper development team.</li>
+                    <li>Worked as scrum master for a lab-wide application.</li>
+                    <li>Gathered requirements, wrote user stories, wrote bug reports, maintained backlog, and ran user meetings.</li>
+                </ul>
+            </div>
+            
+            <div class="resume-item">
+                <h3>Volunteer Experience</h3>
+                <div class="resume-meta">Cyber Patriot Volunteer, 8/2016 – Current</div>
+                <p>Assisted the Sandia Labs Cyber Patriot team with mentoring local HS students in Linux and Cyber Security.</p>
+                
+                <div class="resume-meta">Roadrunner Food Bank, 1/2007 – Current</div>
+                <p>Prepare and package bulk food donations into individual items for distributions.</p>
+                
+                <div class="resume-meta">Little League, 1/2017 – 1/2021</div>
+                <p>Duties included mowing fields, turf care, weed control/removal, field marking and grooming, irrigation repair, and park maintenance. Led a team of Community service workers to complete several labor-intensive duties around the park.</p>
+            </div>
+            
+            <div class="resume-item">
+                <h3>Technical Skills</h3>
+                <p>Programming Languages: C, C++, SQL, Python, Java, ASM</p>
+                <p>Security Tools: YARA, IDA Pro, Radare2, GDB, Wireshark, Splunk</p>
+                <p>Infrastructure: System administration, network configuration and management, provisioning (ansible, vagrant, terraform), hypervisors (VMware ESXi, Xen), Software defined networking (SDN), PowerShell</p>
+                <p>Networking: VYoS, Palo Alto suite, Arista EOS, Cisco IOS</p>
+            </div>
+            
+            <a href="your-resume.pdf" class="btn" target="_blank">Download Full Resume (PDF)</a>
+        </section>
+        
+        <section id="publications">
+            <h2>Publications & Projects</h2>
+            
+            <div class="publication">
+                <h3>DOE Publications</h3>
+                <div class="publication-meta">Department of Energy Scientific and Technical Information</div>
+                <p>Research publications through the Department of Energy related to cybersecurity and systems development.</p>
+                <a href="https://www.osti.gov/servlets/purl/1570320" class="btn" target="_blank">Publication 1</a>
+                <a href="https://www.osti.gov/biblio/1807137" class="btn" target="_blank">Publication 2</a>
+            </div>
+            
+            <div class="publication">
+                <h3>Low Resolution Indexing</h3>
+                <div class="publication-meta">Developed at Sandia National Laboratories</div>
+                <p>A search tool used by the IR team that allows for sub-millisecond search time over large peta-byte scale data sets. This innovative tool significantly improved the efficiency of data analysis for security operations.</p>
+            </div>
+            
+            <div class="publication">
+                <h3>HADES Platform Contributions (R&D Top 100 Award Winner)</h3>
+                <div class="publication-meta">Sandia National Laboratories</div>
+                <p>Developed kernel hook modules to support the HADES (High-Fidelity Adaptive Deceptive & Emulytics System) platform, enabling anonymous virtual machine introspection on type 1 hypervisors and other novel capabilities for cybersecurity research.</p>
+            </div>
+            
+            <div class="publication">
+                <h3>IoT and ICS Security Research</h3>
+                <div class="publication-meta">Sandia National Laboratories</div>
+                <p>Identified security vulnerabilities in industrial IoT devices and smart meters. Conducted research on equipment from vendors such as Allen Bradley, Siemens, and Rockwell Automation to improve industrial control system security.</p>
+            </div>
+        </section>
+        
+        <section id="awards">
+            <h2>Awards & Recognition</h2>
+            
+            <div class="publication">
+                <h3>Awards & Recognition</h3>
+                <div class="publication-meta">Employee Recognition Award (ERA), Sandia National Laboratories</div>
+                <p>Received a prestigious Employee Recognition Award for exceptional contributions to a project at Sandia National Laboratories. This highly competitive award is given to only a select few employees (approximately 30 out of 15,000) who demonstrate outstanding performance and significant impact to laboratory operations.</p>
+            </div>
+            
+            <div class="publication">
+                <h3>Cybersecurity Education Contributions</h3>
+                <div class="publication-meta">Sandia National Laboratories</div>
+                <p>Helped develop cyber security exercises and orchestration platforms for TracerFIRE (Professional) and ThunderBirdCup (K-12), educational initiatives at Sandia aimed at training the next generation of cybersecurity professionals.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>I'm always open to discussing new projects, research collaborations, or opportunities. Feel free to reach out!</p>
+            <p>Email: afasulo3@unm.edu</p>
+            <p>Location: Albuquerque, NM</p>
+            
+            <div class="social-links">
+                <!-- FontAwesome would normally be used here, but for the placeholder we'll use simple text -->
+                <a href="https://www.linkedin.com/in/adam-fasulo" target="_blank">LinkedIn</a>
+                <a href="https://github.com/afasulo" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Adam A. Fasulo. All Rights Reserved.</p>
+        <p>Last updated: March 2025</p>
+    </footer>
+</body>
+</html>
